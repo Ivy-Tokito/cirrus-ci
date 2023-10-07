@@ -1,6 +1,6 @@
 env:
-    token: "ENCRYPTED[1525b6bbd832cca891fca78cf804b33957d259f5517479cdd8fc997ce6a8943a733f678e66fba88bc082b963ff59ea00]"
-    chat_id: "ENCRYPTED[ac707f7fef2e67dabdeb561c4454979509cc41d2f146909ff76650db052749082b24bde8aea6971474fec67c1a432d3d]"
+    token: "ENCRYPTED[aeafe03efdcc70074a92dc0172e3fe0c687c8a732da714f9fc0deec9459bbb1405dff70839e91762d3288b2aba290a83]"
+    chat_id: "@nexus_to"
 
 task:
   name: "Nexus-Kernel-Builder"
@@ -11,5 +11,5 @@ task:
       memory: 32G
 
   Build_script:
-      - ln -fs /usr/share/zoneinfo/Asia/Dhaka /etc/localtime && date
+      - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
       - bash setup.sh
