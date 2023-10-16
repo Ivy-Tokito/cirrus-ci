@@ -17,24 +17,23 @@ task:
   Munch_script:
     - cd kernel
     - bash build.sh null munch lto
-    - sleep 5
+
   Aloith_script:
     - cd kernel
     - bash build.sh null alioth lto
-    - sleep 5
+
   Apollo_script:
     - cd kernel
     - bash build.sh null apollo lto
-    - sleep 5
+
   Cmi_script:
     - cd kernel
     - bash build.sh null cmi lto
-    - sleep 5
+
   Lmi_script:
     - cd kernel
     - bash build.sh null lmi lto
-    - sleep 5
+
   Umi_script:
     - cd kernel
     - bash build.sh null umi lto
-    - sleep 5
