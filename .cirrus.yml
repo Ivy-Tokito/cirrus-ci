@@ -4,96 +4,84 @@ env:
 
 Munch_task:
   name: "Nexus-Kernel-Munch"
-  timeout_in: 2h
   container:
       image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Setup_script:
-    - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
     - bash setup.sh
 
-  Munch_script:
+  Build_script:
     - cd kernel
     - bash build.sh null munch lto
 
 Alioth_task:
   name: "Nexus-Kernel-Aloith"
-  timeout_in: 2h
   container:
       image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Setup_script:
-    - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
     - bash setup.sh
 
-  Aloith_script:
+  Build_script:
     - cd kernel
     - bash build.sh null alioth lto
 
 Apollo_task:
   name: "Nexus-Kernel-Apollo"
-  timeout_in: 2h
   container:
       image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Setup_script:
-    - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
     - bash setup.sh
 
-  Apollo_script:
+  Build_script:
     - cd kernel
     - bash build.sh null apollo lto
 
 Cmi_task:
   name: "Nexus-Kernel-Cmi"
-  timeout_in: 2h
   container:
       image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Setup_script:
-    - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
     - bash setup.sh
 
-  Cmi_script:
+  Build_script:
     - cd kernel
     - bash build.sh null cmi lto
 
 Lmi_task:
   name: "Nexus-Kernel-Lmi"
-  timeout_in: 2h
   container:
       image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Setup_script:
-    - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
     - bash setup.sh
 
-  Lmi_script:
+  Build_script:
     - cd kernel
     - bash build.sh null lmi lto
 
 Umi_task:
   name: "Nexus-Kernel-Umi"
-  timeout_in: 2h
   container:
       image: ghcr.io/neutron-projects/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Setup_script:
-    - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
     - bash setup.sh
 
-  Umi_script:
+  Build_script:
     - cd kernel
     - bash build.sh null umi lto
